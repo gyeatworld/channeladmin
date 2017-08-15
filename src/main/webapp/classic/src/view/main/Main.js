@@ -8,11 +8,16 @@
 Ext.define('ChannelAdmin.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
-
+    
+    //添加Viewport插件
+    plugins: 'viewport',
+    
     requires: [
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
-
+        
+        'ChannelAdmin.view.login.LoginController',
+        'ChannelAdmin.view.login.LoginModel',
         'ChannelAdmin.view.main.MainController',
         'ChannelAdmin.view.main.MainModel',
         'ChannelAdmin.view.main.List'

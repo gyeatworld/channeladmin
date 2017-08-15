@@ -14,5 +14,6 @@ Ext.application({
     ],
 
     // The name of the initial view to create.
-    mainView: 'ChannelAdmin.view.main.Main'
+    //禁用main，打开跳登录
+    //mainView: 'ChannelAdmin.view.main.Main'
 });

@@ -14,7 +14,28 @@ Ext.define('ChannelAdmin.Application', {
             quickTips: true
         }
     },
+    
+    views: [
+        'ChannelAdmin.view.login.LoginModel',
+        'ChannelAdmin.view.main.MainModel'
+    ],
+    
+    launch: function () {
+        // TODO - Launch the application
 
+        var loggedIn;
+
+        // Check to see the current value of the localStorage key
+        loggedIn = localStorage.getItem("TutorialLoggedIn");
+
+        // This ternary operator determines the value of the TutorialLoggedIn key.
+        // If TutorialLoggedIn isn't true, we display the login window,
+        // otherwise, we display the main view
+        Ext.create({
+            xtype: loggedIn ? 'app-main' : 'login'
+        });
+    },
+    
     onAppUpdate: function () {
         Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
             function (choice) {
