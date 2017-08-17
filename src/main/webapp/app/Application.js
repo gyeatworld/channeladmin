@@ -16,17 +16,17 @@ Ext.define('ChannelAdmin.Application', {
     },
     
     views: [
-        'ChannelAdmin.view.login.LoginModel',
+        'ChannelAdmin.view.login.LoginView',
         'ChannelAdmin.view.main.MainModel'
     ],
     
     launch: function () {
         // TODO - Launch the application
 
-        var loggedIn;
+        var loggedIn=false;
 
         // Check to see the current value of the localStorage key
-        loggedIn = localStorage.getItem("TutorialLoggedIn");
+        //loggedIn = localStorage.getItem("TutorialLoggedIn");
 
         // This ternary operator determines the value of the TutorialLoggedIn key.
         // If TutorialLoggedIn isn't true, we display the login window,

@@ -17,7 +17,7 @@ Ext.define('ChannelAdmin.view.main.Main', {
         'Ext.window.MessageBox',
         
         'ChannelAdmin.view.login.LoginController',
-        'ChannelAdmin.view.login.LoginModel',
+        'ChannelAdmin.view.login.LoginView',
         'ChannelAdmin.view.main.MainController',
         'ChannelAdmin.view.main.MainModel',
         'ChannelAdmin.view.main.List'
